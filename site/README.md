@@ -36,6 +36,25 @@ python -m http.server 5500 --directory site
 # puis ouvrir http://localhost:5500
 ```
 
+## Déploiement sur Vercel
+
+Le projet est prêt pour Vercel. Un fichier `vercel.json` à la racine du dépôt indique de servir le dossier `site/` (site statique, sans build) avec `cleanUrls`, en-têtes de sécurité et cache des assets.
+
+**Méthode recommandée (via GitHub) :**
+1. Sur [vercel.com](https://vercel.com) → *Add New → Project* → importer le dépôt `mara-padel-club`.
+2. Framework Preset : **Other** · Build Command : *(laisser vide)* · Output Directory : **site** (déjà fixé par `vercel.json`).
+3. *Deploy*. Les déploiements se feront automatiquement à chaque push sur `main`.
+
+**Ou via la CLI :**
+
+```bash
+npm i -g vercel
+vercel        # déploiement de prévisualisation
+vercel --prod # déploiement en production
+```
+
+> Les URLs sont « propres » sur Vercel (`/padel` au lieu de `/padel.html`). En local avec le serveur Python, utilisez les chemins avec `.html`.
+
 ## Notes
 
 - 100 % statique (HTML/CSS/JS), facilement déployable (Netlify, Vercel, GitHub Pages, hébergement classique).
