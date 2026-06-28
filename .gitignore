@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Editors
+.vscode/
+.idea/
+
+# Temp screenshots / scratch
+shot-*.png
+logo-*.png
+_probe.html
+
+# Node (si ajout futur d'outils)
+node_modules/
+dist/
+.cache/

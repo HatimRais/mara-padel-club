@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Conciergerie — MĀRA · Marrakech</title>
+  <meta name="description" content="Contactez MĀRA Padel Social Club à Marrakech : réservations, adhésions, événements et conciergerie. Route de l'Ourika, Km 5." />
+  <link rel="icon" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header interior">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="MĀRA — accueil"><svg class="brand-logo animate" viewBox="0 0 180 50" role="img" aria-label="M&#256;RA"><text x="2" y="40">M&#256;RA</text></svg><span class="brand-sub">Padel Social Club</span></a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="padel.html">Padel</a>
+        <a href="wellness.html">Mara Wellness</a>
+        <a href="gourmet.html">Mara Gourmet</a>
+        <a href="kids.html">Mara Kids</a>
+        <a href="business.html">Mara Business</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="padel.html" class="btn btn--light nav-cta">Réserver un court</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="pagehero" style="min-height:56svh">
+    <div class="pagehero__media"><img src="assets/images/lounge-pergola.png" alt="Salon sous pergola du club MĀRA" /></div>
+    <div class="pagehero__inner">
+      <div class="container">
+        <nav class="crumbs"><a href="index.html">Accueil</a> <span>/</span> <span>Contact</span></nav>
+        <span class="eyebrow">Conciergerie</span>
+        <h1>Prenons contact</h1>
+        <p>Réservations, adhésions, soins, événements privés — notre équipe vous répond avec attention.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div>
+          <span class="eyebrow reveal">Écrivez-nous</span>
+          <h2 class="section-title reveal" data-delay="1" style="font-size:clamp(2rem,4vw,3rem)">Votre demande</h2>
+          <hr class="rule reveal" data-delay="1" />
+          <form class="reveal" data-delay="2" data-demo style="margin-top:1.4rem">
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Nom complet</label><input id="c-name" type="text" required /></div>
+              <div class="field"><label for="c-email">E-mail</label><input id="c-email" type="email" required /></div>
+              <div class="field"><label for="c-phone">Téléphone</label><input id="c-phone" type="tel" /></div>
+              <div class="field"><label for="c-subject">Objet</label>
+                <select id="c-subject">
+                  <option>Réserver un court</option>
+                  <option>Adhésion / Membre</option>
+                  <option>Spa & soins</option>
+                  <option>Réserver une table</option>
+                  <option>Mara Kids</option>
+                  <option>Mara Business / Événement</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+              <div class="field full"><label for="c-msg">Message</label><textarea id="c-msg" placeholder="Dites-nous en plus sur votre projet…"></textarea></div>
+            </div>
+            <button type="submit" class="btn btn--primary" style="margin-top:1.2rem">Envoyer ma demande <span class="arrow">→</span></button>
+            <p class="form-note" data-feedback>Réponse de notre conciergerie sous 24h.</p>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <span class="eyebrow reveal">Le club</span>
+          <h2 class="section-title reveal" data-delay="1" style="font-size:clamp(2rem,4vw,3rem)">Nous trouver</h2>
+          <hr class="rule reveal" data-delay="1" />
+          <div class="reveal" data-delay="2" style="margin-top:1rem">
+            <div class="info-row"><div class="k">Adresse</div><div class="v">Route de l'Ourika, Km 5<br>40000 Marrakech, Maroc</div></div>
+            <div class="info-row"><div class="k">Téléphone</div><div class="v"><a href="tel:+212524000000">+212 5 24 00 00 00</a></div></div>
+            <div class="info-row"><div class="k">E-mail</div><div class="v"><a href="mailto:hello@maraclub.com">hello@maraclub.com</a></div></div>
+          </div>
+          <div class="reveal" data-delay="3" style="margin-top:1.8rem">
+            <div class="k" style="font-size:0.68rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted); margin-bottom:0.6rem">Horaires d'ouverture</div>
+            <div class="hours">
+              <div class="row"><span>Lundi – Vendredi</span><span>8h00 – 23h00</span></div>
+              <div class="row"><span>Samedi – Dimanche</span><span>8h00 – 23h00</span></div>
+              <div class="row"><span>Spa &amp; soins</span><span>10h00 – 21h00</span></div>
+            </div>
+          </div>
+          <iframe class="map-embed reveal" data-delay="3" style="margin-top:1.8rem" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-7.98%2C31.55%2C-7.90%2C31.61&amp;layer=mapnik&amp;marker=31.58%2C-7.94"
+            title="Carte — MĀRA Marrakech"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><a class="brand" href="index.html"><svg class="brand-logo animate" viewBox="0 0 180 50" role="img" aria-label="M&#256;RA"><text x="2" y="40">M&#256;RA</text></svg><span class="brand-sub">Padel Social Club</span></a><p class="footer-tag">Une oasis sociale où le sport, le bien-être et la table se rejoignent, au cœur de Marrakech.</p></div>
+        <div class="footer-col"><h5>Le club</h5><a href="padel.html">Padel</a><a href="wellness.html">Mara Wellness</a><a href="gourmet.html">Mara Gourmet</a><a href="kids.html">Mara Kids</a><a href="business.html">Mara Business</a></div>
+        <div class="footer-col"><h5>Visiter</h5><p>Route de l'Ourika, Km 5<br>40000 Marrakech, Maroc</p><a href="tel:+212524000000">+212 5 24 00 00 00</a><a href="mailto:hello@maraclub.com">hello@maraclub.com</a><p>Tous les jours · 8h – 23h</p></div>
+        <div class="footer-col"><h5>Lettre de l'oasis</h5><p>Événements, tournois et rituels saisonniers.</p><form class="news" data-demo><input type="email" placeholder="Votre e-mail" required aria-label="E-mail" /><button type="submit" aria-label="S'inscrire">→</button></form></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> MĀRA · Conçu pour l'élite · Tous droits réservés</span><div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="contact.html">Conciergerie</a></div></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

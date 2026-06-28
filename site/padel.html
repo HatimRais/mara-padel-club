@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padel — MĀRA Social Club · Marrakech</title>
+  <meta name="description" content="Six courts de padel panoramiques à Marrakech, académie junior, cours particuliers et ligues sociales. Réservez votre court chez MĀRA." />
+  <link rel="icon" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header interior">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="MĀRA — accueil">
+        <svg class="brand-logo animate" viewBox="0 0 180 50" role="img" aria-label="M&#256;RA"><text x="2" y="40">M&#256;RA</text></svg>
+        <span class="brand-sub">Padel Social Club</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="padel.html" aria-current="page">Padel</a>
+        <a href="wellness.html">Mara Wellness</a>
+        <a href="gourmet.html">Mara Gourmet</a>
+        <a href="kids.html">Mara Kids</a>
+        <a href="business.html">Mara Business</a>
+        <a href="contact.html">Contact</a>
+        <a href="#reserver" class="btn btn--light nav-cta">Réserver un court</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pagehero">
+    <div class="pagehero__media"><img src="assets/images/padel-court-sunset.jpg" alt="Court de padel MĀRA au coucher du soleil entouré de palmiers" /></div>
+    <div class="pagehero__inner">
+      <div class="container">
+        <nav class="crumbs"><a href="index.html">Accueil</a> <span>/</span> <span>Padel</span></nav>
+        <span class="eyebrow">01 — Le sport</span>
+        <h1>Padel</h1>
+        <p>Six courts panoramiques de dernière génération, au pied de l'Atlas. Le jeu, comme un art social.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO + FIGURES -->
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="stack">
+          <span class="eyebrow reveal">Les courts</span>
+          <h2 class="section-title reveal" data-delay="1">Une infrastructure<br>d'exception</h2>
+          <hr class="rule reveal" data-delay="1" />
+          <p class="lead reveal" data-delay="2">Surfaces premium en gazon synthétique nouvelle génération, parois en verre panoramique et éclairage LED anti-éblouissement pour jouer du matin tard dans la nuit.</p>
+          <p class="reveal" data-delay="2">Quatre courts couverts climatisés et deux courts panoramiques extérieurs, tous équipés pour la captation vidéo de vos matchs. Vestiaires premium, prêt de raquettes haut de gamme et pro-shop sur place.</p>
+          <div class="figures reveal" data-delay="3">
+            <div class="figure"><div class="num">6</div><div class="lbl">Courts</div></div>
+            <div class="figure"><div class="num">4</div><div class="lbl">Couverts & climatisés</div></div>
+            <div class="figure"><div class="num">23h</div><div class="lbl">Fermeture</div></div>
+          </div>
+        </div>
+        <div class="split__media img-mask reveal" data-delay="2">
+          <img src="assets/images/padel-racket-clay.jpg" alt="Raquette de padel et balle posées sur la terre battue" />
+          <span class="frame-tag">Matériel pro disponible</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section bg-paper-warm" id="reserver">
+    <div class="container">
+      <div class="center" style="margin-bottom:2.6rem">
+        <span class="eyebrow reveal">Réservation</span>
+        <h2 class="section-title reveal mx-auto" data-delay="1">Réservez votre court</h2>
+        <hr class="rule reveal" data-delay="1" />
+        <p class="reveal mx-auto maxw-prose" data-delay="2">Choisissez votre date, votre court et le nombre de joueurs pour découvrir les créneaux disponibles en temps réel.</p>
+      </div>
+
+      <div class="booking reveal" data-delay="2">
+        <form id="booking-form">
+          <div class="booking__grid">
+            <div class="field">
+              <label for="b-date">Date</label>
+              <input type="date" id="b-date" name="date" required />
+            </div>
+            <div class="field">
+              <label for="b-court">Court</label>
+              <select id="b-court" name="court">
+                <option value="1">Court 1 · Couvert</option>
+                <option value="2">Court 2 · Couvert</option>
+                <option value="3">Court 3 · Couvert</option>
+                <option value="4">Court 4 · Couvert</option>
+                <option value="5">Court 5 · Panoramique</option>
+                <option value="6">Court 6 · Panoramique</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="b-players">Joueurs</label>
+              <select id="b-players" name="players">
+                <option>2</option><option selected>4</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="b-duration">Durée</label>
+              <select id="b-duration" name="duration">
+                <option>60 min</option><option selected>90 min</option><option>120 min</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary">Voir les créneaux <span class="arrow">→</span></button>
+          </div>
+        </form>
+
+        <div class="slot-result" id="slot-result">
+          <p class="muted" id="slot-summary">Sélectionnez un horaire disponible ci-dessous.</p>
+          <div class="slots" id="slots"></div>
+        </div>
+      </div>
+      <p class="center muted reveal" style="margin-top:1.2rem; font-size:0.82rem">Réservation en ligne démonstrative — la confirmation finale se fait via la conciergerie au +212 5 24 00 00 00.</p>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section class="section">
+    <div class="container">
+      <div class="center" style="margin-bottom:2.6rem">
+        <span class="eyebrow reveal">Tarifs</span>
+        <h2 class="section-title reveal mx-auto" data-delay="1">Jouer chez MĀRA</h2>
+        <hr class="rule reveal" data-delay="1" />
+      </div>
+      <div class="cards">
+        <div class="price-card reveal">
+          <span class="tier">À l'heure</span>
+          <div class="amt">280 <span style="font-size:1.1rem">DH</span></div>
+          <span class="per">/ heure · court couvert</span>
+          <ul class="pc-feat">
+            <li>Jusqu'à 4 joueurs</li>
+            <li>Prêt de raquettes inclus</li>
+            <li>Accès vestiaires premium</li>
+          </ul>
+          <a href="#reserver" class="btn btn--ghost">Réserver</a>
+        </div>
+        <div class="price-card featured reveal" data-delay="1">
+          <span class="tier">Abonnement</span>
+          <div class="amt">1 900 <span style="font-size:1.1rem">DH</span></div>
+          <span class="per">/ mois · membre</span>
+          <ul class="pc-feat">
+            <li>Réservation prioritaire 48h avant</li>
+            <li>4 heures de jeu incluses</li>
+            <li>-15% spa, table & pro-shop</li>
+            <li>Accès aux ligues sociales</li>
+          </ul>
+          <a href="contact.html" class="btn btn--solid-light">Devenir membre</a>
+        </div>
+        <div class="price-card reveal" data-delay="2">
+          <span class="tier">Cours particulier</span>
+          <div class="amt">450 <span style="font-size:1.1rem">DH</span></div>
+          <span class="per">/ heure · avec un pro</span>
+          <ul class="pc-feat">
+            <li>Coach diplômé FFT / FIP</li>
+            <li>Analyse vidéo de votre jeu</li>
+            <li>Tous niveaux, dès 6 ans</li>
+          </ul>
+          <a href="#academie" class="btn btn--ghost">L'académie</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIE -->
+  <section class="section bg-sand" id="academie">
+    <div class="container">
+      <div class="split">
+        <div class="split__media img-mask reveal">
+          <img src="assets/images/padel-kids-academy.jpg" alt="Enfants en cours à l'académie de padel MĀRA" />
+          <span class="frame-tag">Académie junior</span>
+        </div>
+        <div class="stack">
+          <span class="eyebrow reveal">L'académie</span>
+          <h2 class="section-title reveal" data-delay="1">Progresser,<br>à tout âge</h2>
+          <hr class="rule reveal" data-delay="1" />
+          <p class="lead reveal" data-delay="2">De l'initiation enfant au perfectionnement compétiteur, notre équipe de coachs construit un parcours sur mesure.</p>
+          <div class="amenities reveal" data-delay="2" style="grid-template-columns:1fr 1fr; margin-top:1rem">
+            <div class="amenity"><h4>Académie Junior</h4><p>Stages et cours hebdomadaires dès 6 ans, dans un cadre ludique et sécurisé.</p></div>
+            <div class="amenity"><h4>Clinics adultes</h4><p>Sessions thématiques en petit groupe : volée, bandeja, tactique de double.</p></div>
+            <div class="amenity"><h4>Ligues sociales</h4><p>Championnats internes par niveau, suivis d'un verre au club-house.</p></div>
+            <div class="amenity"><h4>Coaching privé</h4><p>Cours individuels avec analyse vidéo et plan de progression.</p></div>
+          </div>
+          <a href="contact.html" class="tlink reveal" data-delay="3" style="margin-top:1.4rem">Rejoindre l'académie <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="center" style="margin-bottom:2.6rem">
+        <span class="eyebrow reveal">En pratique</span>
+        <h2 class="section-title reveal mx-auto" data-delay="1">Du créneau au match</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h4>Réservez</h4><p>Choisissez votre court et votre horaire en ligne, ou laissez la conciergerie composer votre partie.</p></div>
+        <div class="step reveal" data-delay="1"><h4>Préparez-vous</h4><p>Vestiaires premium, prêt de raquettes haut de gamme et boutique pro à votre arrivée.</p></div>
+        <div class="step reveal" data-delay="2"><h4>Jouez & savourez</h4><p>Après le match, prolongez au club-house autour d'un jus pressé ou d'un déjeuner face aux courts.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="cta-band__media"><img src="assets/images/dining-courtside.jpg" alt="Restaurant face aux courts de padel" /></div>
+    <div class="cta-band__inner container">
+      <span class="eyebrow on-dark reveal">Prêt à jouer ?</span>
+      <h2 class="section-title reveal mx-auto maxw-md" data-delay="1">Votre prochaine partie commence ici</h2>
+      <div class="hero__actions reveal" data-delay="2" style="justify-content:center">
+        <a href="#reserver" class="btn btn--solid-light">Réserver un court <span class="arrow">→</span></a>
+        <a href="gourmet.html" class="btn btn--light">Réserver une table après le match</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><svg class="brand-logo animate" viewBox="0 0 180 50" role="img" aria-label="M&#256;RA"><text x="2" y="40">M&#256;RA</text></svg><span class="brand-sub">Padel Social Club</span></a>
+          <p class="footer-tag">Une oasis sociale où le sport, le bien-être et la table se rejoignent, au cœur de Marrakech.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Le club</h5>
+          <a href="padel.html">Padel</a><a href="wellness.html">Mara Wellness</a><a href="gourmet.html">Mara Gourmet</a><a href="kids.html">Mara Kids</a><a href="business.html">Mara Business</a>
+        </div>
+        <div class="footer-col">
+          <h5>Visiter</h5>
+          <p>Route de l'Ourika, Km 5<br>40000 Marrakech, Maroc</p>
+          <a href="tel:+212524000000">+212 5 24 00 00 00</a>
+          <a href="mailto:hello@maraclub.com">hello@maraclub.com</a>
+          <p>Tous les jours · 8h – 23h</p>
+        </div>
+        <div class="footer-col">
+          <h5>Lettre de l'oasis</h5>
+          <p>Événements, tournois et rituels saisonniers.</p>
+          <form class="news" data-demo><input type="email" placeholder="Votre e-mail" required aria-label="E-mail" /><button type="submit" aria-label="S'inscrire">→</button></form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> MĀRA · Conçu pour l'élite · Tous droits réservés</span>
+        <div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="contact.html">Conciergerie</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
