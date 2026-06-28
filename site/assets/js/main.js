@@ -95,6 +95,18 @@
     });
   });
 
+  /* ---------- Back to top ---------- */
+  const toTop = document.querySelector(".fab--top");
+  if (toTop) {
+    const toggleTop = () => toTop.classList.toggle("show", window.scrollY > 600);
+    toggleTop();
+    window.addEventListener("scroll", toggleTop, { passive: true });
+    toTop.addEventListener("click", () => {
+      const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    });
+  }
+
   /* ---------- Year ---------- */
   document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 
